@@ -1,9 +1,11 @@
 from flask import Flask, request, send_file, jsonify
+from flask_cors import CORS
 import io
 import qrcode
 from qrcode.constants import ERROR_CORRECT_L, ERROR_CORRECT_M, ERROR_CORRECT_Q, ERROR_CORRECT_H
 
 app = Flask(__name__)
+CORS(app)
 
 EC_MAP = {"L": ERROR_CORRECT_L, "M": ERROR_CORRECT_M, "Q": ERROR_CORRECT_Q, "H": ERROR_CORRECT_H}
 

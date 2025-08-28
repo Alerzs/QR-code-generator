@@ -6,8 +6,8 @@
 section{
     background-image: url(images/bg-purple.png);
     background-size: cover;
+    height: 150vh;
     padding-top: 150px;
-    height: 100vh;
 }
 .container{
     margin: 0 auto;
